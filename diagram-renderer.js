@@ -217,7 +217,7 @@ class CuttingSpeedCanvas {
     ctx.fill();
 
     // Label for vc
-    ctx.font = 'bold 13px Inter, sans-serif';
+    ctx.font = 'bold 13px Iosevka Charon, sans-serif';
     ctx.fillText(`vc = ${this.vc.toFixed(1)} m/min`, toolX + 12, toolY + vcLen * 0.65);
     ctx.restore();
 
@@ -241,7 +241,7 @@ class CuttingSpeedCanvas {
     ctx.closePath();
     ctx.fill();
 
-    ctx.font = 'bold 12px Inter, sans-serif';
+    ctx.font = 'bold 12px Iosevka Charon, sans-serif';
     ctx.fillStyle = '#2563eb';
     ctx.fillText(`n = ${this.rpm.toFixed(0)} min⁻¹`, cx - 35, cy - r - 26);
     ctx.restore();
@@ -275,7 +275,7 @@ class CuttingSpeedCanvas {
     ctx.translate(dimX - 8, cy);
     ctx.rotate(-Math.PI / 2);
     ctx.textAlign = 'center';
-    ctx.font = 'bold 12px Inter, sans-serif';
+    ctx.font = 'bold 12px Iosevka Charon, sans-serif';
     ctx.fillStyle = '#059669';
     ctx.fillText(`Ø d = ${this.diameterMm} mm`, 0, -4);
     ctx.restore();
@@ -326,7 +326,7 @@ class CuttingSpeedCanvas {
     ctx.lineTo(vx, vy + 45);
     ctx.stroke();
     this.drawArrowHead(ctx, vx, vy + 45, 0, 1, '#dc2626');
-    ctx.font = 'bold 12px Inter, sans-serif';
+    ctx.font = 'bold 12px Iosevka Charon, sans-serif';
     ctx.fillText(`vc = ${this.vc.toFixed(1)} m/min`, vx + 10, vy + 30);
     ctx.restore();
   }
